@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://github.com/ZaidBenmr/Cryptocurrency-Data-Engineering-Project/assets/105943885/16ff8095-6f1b-4c0b-b9ea-e969c5633e84" alt="Banner" width="780">
+  <img src="https://github.com/ZaidBenmr/Cryptocurrency-Data-Engineering-Project/assets/105943885/740f4b9e-3907-49cc-9b45-07a983879ae0" alt="Banner" width="780">
   
   <div id="user-content-toc">
     <ul>
@@ -76,24 +76,24 @@ In our way to implemente this project, we've passed with the following steps :
 ### Power BI
 <div style="display: flex; flex-wrap: wrap; justify-content: center;" align="center">
     <div style="display: flex; flex-direction: row;">
-        <img src="https://github.com/ZaidBenmr/Cryptocurrency-Data-Engineering-Project/assets/105943885/16ff8095-6f1b-4c0b-b9ea-e969c5633e84" alt="Banner" width="500">
-        <img src="https://github.com/ZaidBenmr/Cryptocurrency-Data-Engineering-Project/assets/105943885/060ec898-81f6-4057-8e5a-12338f7a39c0" alt="Banner" width="500">
+        <img src="https://github.com/ZaidBenmr/Cryptocurrency-Data-Engineering-Project/assets/105943885/740f4b9e-3907-49cc-9b45-07a983879ae0" alt="Banner" width="500">
+        <img src="https://github.com/ZaidBenmr/Cryptocurrency-Data-Engineering-Project/assets/105943885/3de259cb-389a-4270-ad00-168fe09653e1" alt="Banner" width="500">
     </div>
     <div style="display: flex; flex-direction: row;">
-        <img src="https://github.com/ZaidBenmr/Cryptocurrency-Data-Engineering-Project/assets/105943885/c707d26a-1dc8-4e02-8b2f-b3b00ce9c5bc" alt="Banner" width="500">
-        <img src="https://github.com/ZaidBenmr/Cryptocurrency-Data-Engineering-Project/assets/105943885/1176f3f0-ea49-41a8-9e99-7fcd6c3a3947" alt="Banner" width="500">
+        <img src="https://github.com/ZaidBenmr/Cryptocurrency-Data-Engineering-Project/assets/105943885/9d16001f-9aa9-4a6e-8014-09887b42ff6f" alt="Banner" width="500">
+        <img src="https://github.com/ZaidBenmr/Cryptocurrency-Data-Engineering-Project/assets/105943885/21d572d7-aaff-41d2-806c-034e1cded37c" alt="Banner" width="500">
     </div>
 </div>
 
 ### Angular Dashboard
 <div style="display: flex; flex-wrap: wrap; justify-content: center;" align="center">
     <div style="display: flex; flex-direction: row;">
-        <img src="https://github.com/ZaidBenmr/Cryptocurrency-Data-Engineering-Project/assets/105943885/0c48f59b-c157-42d9-8304-18f4080e9e99" alt="Banner" width="500" height="250">
-        <img src="https://github.com/ZaidBenmr/Cryptocurrency-Data-Engineering-Project/assets/105943885/6a132813-18a0-443d-850c-b66b0139a2be" alt="Banner" width="500" height="250">
+        <img src="https://github.com/ZaidBenmr/Cryptocurrency-Data-Engineering-Project/assets/105943885/f61ca81e-e229-4d96-8333-bd5ecfc472c7" alt="Banner" width="500" height="250">
+        <img src="https://github.com/ZaidBenmr/Cryptocurrency-Data-Engineering-Project/assets/105943885/32228221-b728-446e-8d39-a21469f1a429" alt="Banner" width="500" height="250">
     </div>
     <div style="display: flex; flex-direction: row;">
-        <img src="https://github.com/ZaidBenmr/Cryptocurrency-Data-Engineering-Project/assets/105943885/df0aad2c-eb76-447f-9549-03f909c3f109" alt="Banner" width="500" height="250">
-        <img src="https://github.com/ZaidBenmr/Cryptocurrency-Data-Engineering-Project/assets/105943885/09eedc2c-eb60-4f6f-9170-3fc8acc34e74" alt="Banner" width="500" height="250">
+        <img src="https://github.com/ZaidBenmr/Cryptocurrency-Data-Engineering-Project/assets/105943885/76b463c9-fd5b-4b9a-8f6a-8a002c8c456f" alt="Banner" width="500" height="250">
+        <img src="https://github.com/ZaidBenmr/Cryptocurrency-Data-Engineering-Project/assets/105943885/cc4a6d15-652e-409f-bfdc-168491576e27" alt="Banner" width="500" height="250">
     </div>
 </div>
 
@@ -101,7 +101,7 @@ In our way to implemente this project, we've passed with the following steps :
 <a name="arch"></a>
 ## 📝 Project Architecture
 <div align="center">
-  <img src="https://github.com/ZaidBenmr/Cryptocurrency-Data-Engineering-Project/assets/105943885/86090751-cc2c-4e54-aa5a-20f628e308e0" alt="Banner">
+  <img src="https://github.com/ZaidBenmr/Cryptocurrency-Data-Engineering-Project/assets/105943885/8f8ddd7b-dc15-4882-abee-a7549dfb81f6" alt="Banner">
 </div>
 
 ### 🛠️ Technologies Used
