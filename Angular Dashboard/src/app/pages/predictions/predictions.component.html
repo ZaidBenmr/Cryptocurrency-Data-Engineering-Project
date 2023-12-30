@@ -1,0 +1,43 @@
+<div class=" content">
+    <div class=" row">
+      <div class=" col-12">
+        <div class=" card card-chart">
+          <div class=" card-header">
+            <div class=" row">
+              <div class=" col-sm-6 text-left">
+                <h5 class=" card-category">Data Analysis</h5>
+                <h2 class=" card-title">Closing price future predictions</h2>
+              </div>
+              <div class=" col-sm-6">
+                <div ngbDropdown class="d-inline-block">
+                  <button class="btn btn-danger"  data-toggle="dropdown" id="dropdownBasic1" ngbDropdownToggle>
+                    {{ selectedCrypto }}
+                  </button>
+                  <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                    <button ngbDropdownItem (click)="updateOptions('btc')">Bitcoin</button>
+                    <button ngbDropdownItem (click)="updateOptions('bnb')">Binance</button>
+                    <button ngbDropdownItem (click)="updateOptions('eth')">Ethereum</button>
+                    <button ngbDropdownItem (click)="updateOptions('xrp')">Xrp</button>
+                    <button ngbDropdownItem (click)="updateOptions('aave')">AAVE</button>
+                    <button ngbDropdownItem (click)="updateOptions('ada')">Cardano</button>
+                    <button ngbDropdownItem (click)="updateOptions('bch')">Bitcoin Cash</button>
+                    <button ngbDropdownItem (click)="updateOptions('doge')">Dogecoin</button>
+                    <button ngbDropdownItem (click)="updateOptions('dot')">Polkadot</button>
+                    <button ngbDropdownItem (click)="updateOptions('trx')">Tron</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="chart-area" style="height: 450px"><plotly-plot
+              *ngIf="predicitonsgraph"
+              [data]="predicitonsgraph.data"
+              [layout]="predicitonsgraph.layout"
+              [useResizeHandler]="true"></plotly-plot></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  

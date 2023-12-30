@@ -1,0 +1,156 @@
+
+<div class=" content">
+  <div class=" row">
+    <div class=" col-12">
+      <div class=" card card-chart">
+        <div class=" card-header">
+          <div class=" row">
+            <div class=" col-sm-5 text-left">
+              <h5 class=" card-category">Data analysis</h5>
+              <h2 class=" card-title">High-Low values of each coin</h2>
+            </div>
+            <div class=" col-sm-7">
+              <div ngbDropdown class="d-inline-block">
+                <button class="btn btn-danger"  data-toggle="dropdown" id="dropdownBasic1" ngbDropdownToggle>
+                  {{ selectedCandel }}
+                </button>
+                <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                  <button ngbDropdownItem (click)="updateOptions2('btc')">Bitcoin</button>
+                  <button ngbDropdownItem (click)="updateOptions2('bnb')">Binance</button>
+                  <button ngbDropdownItem (click)="updateOptions2('eth')">Ethereum</button>
+                  <button ngbDropdownItem (click)="updateOptions2('xrp')">Xrp</button>
+                  <button ngbDropdownItem (click)="updateOptions2('aave')">AAVE</button>
+                  <button ngbDropdownItem (click)="updateOptions2('ada')">Cardano</button>
+                  <button ngbDropdownItem (click)="updateOptions2('bch')">Bitcoin Cash</button>
+                  <button ngbDropdownItem (click)="updateOptions2('doge')">Dogecoin</button>
+                  <button ngbDropdownItem (click)="updateOptions2('dot')">Polkadot</button>
+                  <button ngbDropdownItem (click)="updateOptions2('trx')">Tron</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card-body">
+          <div class="chart-area" style="height: 450px"><plotly-plot
+            *ngIf="candelgraph"
+            [data]="candelgraph.data"
+            [layout]="candelgraph.layout"
+            [useResizeHandler]="true"></plotly-plot></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class=" row">
+    <div class=" col-7">
+      <div class=" card card-chart">
+        <div class=" card-header">
+          <div class=" row">
+            <div class=" col-sm-6 text-left">
+              <h5 class=" card-category">Data Analysis</h5>
+              <h3 class=" card-title">Return series</h3>
+            </div>
+            <div class=" col-sm-6">
+              <div ngbDropdown class="d-inline-block">
+                <button class="btn btn-danger"  data-toggle="dropdown" id="dropdownBasic1" ngbDropdownToggle>
+                  {{ selectedReturn }}
+                </button>
+                <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                  <button ngbDropdownItem (click)="updateOptions4('btc')">Bitcoin</button>
+                  <button ngbDropdownItem (click)="updateOptions4('bnb')">Binance</button>
+                  <button ngbDropdownItem (click)="updateOptions4('eth')">Ethereum</button>
+                  <button ngbDropdownItem (click)="updateOptions4('xrp')">Xrp</button>
+                  <button ngbDropdownItem (click)="updateOptions4('aave')">AAVE</button>
+                  <button ngbDropdownItem (click)="updateOptions4('ada')">Cardano</button>
+                  <button ngbDropdownItem (click)="updateOptions4('bch')">Bitcoin Cash</button>
+                  <button ngbDropdownItem (click)="updateOptions4('doge')">Dogecoin</button>
+                  <button ngbDropdownItem (click)="updateOptions4('dot')">Polkadot</button>
+                  <button ngbDropdownItem (click)="updateOptions4('trx')">Tron</button>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card-body">
+          <div class="chart-area" style="height: 450px"><plotly-plot
+            *ngIf="returnsgraph; date"
+            [data]="returnsgraph.data"
+            [layout]="returnsgraph.layout"
+            [useResizeHandler]="true"></plotly-plot></div>
+        </div>
+      </div>
+    </div>
+    <div class=" col-5">
+      <div class=" card card-chart">
+        <div class=" card-header">
+              <h5 class=" card-category">Data Analysis</h5>
+              <h3 class=" card-title">Correlation between Coins</h3>
+        </div>
+        <div class="card-body">
+          <div class="chart-area" style="height: 450px"><plotly-plot
+            *ngIf="correlationgraph"
+            [data]="correlationgraph.data"
+            [layout]="correlationgraph.layout"
+            [useResizeHandler]="true"></plotly-plot></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class=" row">
+    <div class=" col-6 ">
+      <div class=" card card-chart">
+        <div class=" card-header">
+          <h5 class=" card-category">Data Analysis</h5>
+          <h3 class=" card-title">Volatilty</h3>
+        </div>
+        <div class=" card-body">
+          <div class=" chart-area" style="height: 450px"><plotly-plot
+            *ngIf="volatiltygraph"
+            [data]="volatiltygraph.data"
+            [layout]="volatiltygraph.layout"
+            [useResizeHandler]="true"></plotly-plot></div>
+        </div>
+      </div>
+    </div>
+    <div class=" col-6">
+      <div class=" card card-chart">
+        <div class=" card-header">
+          <div class=" row">
+            <div class=" col-sm-7 text-left">
+              <h5 class=" card-category">Data Analysis</h5>
+              <h3 class=" card-title">Return series histograme</h3>
+            </div>
+            <div class=" col-sm-5">
+              <div ngbDropdown class="d-inline-block">
+                <button class="btn btn-danger"  data-toggle="dropdown" id="dropdownBasic1" ngbDropdownToggle>
+                  {{ selectedHistg }}
+                </button>
+                <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                  <button ngbDropdownItem (click)="updateOptions5('btc')">Bitcoin</button>
+                  <button ngbDropdownItem (click)="updateOptions5('bnb');">Binance</button>
+                  <button ngbDropdownItem (click)="updateOptions5('eth')">Ethereum</button>
+                  <button ngbDropdownItem (click)="updateOptions5('xrp')">Xrp</button>
+                  <button ngbDropdownItem (click)="updateOptions5('aave')">AAVE</button>
+                  <button ngbDropdownItem (click)="updateOptions5('ada')">Cardano</button>
+                  <button ngbDropdownItem (click)="updateOptions5('bch')">Bitcoin Cash</button>
+                  <button ngbDropdownItem (click)="updateOptions5('doge')">Dogecoin</button>
+                  <button ngbDropdownItem (click)="updateOptions5('dot')">Polkadot</button>
+                  <button ngbDropdownItem (click)="updateOptions5('trx')">Tron</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card-body">
+          <div class="chart-area" style="height: 450px"><plotly-plot
+            *ngIf="histograme"
+            [data]="histograme.data"
+            [layout]="histograme.layout"
+            [useResizeHandler]="true"></plotly-plot></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,47 @@
+<div class=" content">
+    <div class=" row">
+      <div class=" col-12">
+        <div class=" card card-chart">
+          <div class=" card-header">
+            <div class=" row">
+              <div class=" col-sm-6 text-left">
+                <h5 class=" card-category">Cryptocurrencie Balance</h5>
+                <h2 class=" card-title">Real-time data streaming</h2>
+              </div>
+            </div>
+          </div>
+          <div class="card-body">
+            <table class="table">
+                <thead>
+                  <tr>
+                    <th class="text-center">#</th>
+                    <th>Name</th>
+                    <th>Price</th>
+                    <th>One Hour Change</th>
+                    <th>One Day Change</th>
+                    <th>Seven Days Change</th>
+                    <th>Market Cap</th>
+                    <th>Volume</th>
+                    <th>Supply</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let item of cryptoBalanceData; let i = index">
+                    <td class="text-center">{{ i + 1 }}</td>
+                    <td>{{ item._source.name }}</td>
+                    <td>${{ item._source.price }}</td>
+                    <td>{{ item._source.onehour }}%</td>
+                    <td>{{ item._source.oneday }}%</td>
+                    <td>{{ item._source.sevendays }}%</td>
+                    <td>${{ item._source.marketcap }}</td>
+                    <td>${{ item._source.Volume }}</td>
+                    <td>{{ item._source.Supply }}</td>
+                  </tr>
+                </tbody>
+              </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
