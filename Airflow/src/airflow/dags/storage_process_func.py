@@ -3,7 +3,7 @@ from pymongo import MongoClient
 import json
 import re
 import datetime
-
+ 
 def consume_kafka_data() :
     consumer_config = {
     'bootstrap.servers': '192.168.11.108:9092',  # Kafka broker(s)
